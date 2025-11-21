@@ -1,0 +1,24 @@
+
+--- SIMULATION FAILED ---
+ERROR: Task w1 (released at 0) missed its deadline at time 520.
+       Task still had 18s of work remaining.
+
+0     w4    1188  57    35.625J
+57    w2    1188  40    25.000J
+97    w5    1188  35    21.875J
+132   w3    1188  68    42.500J
+200   w4    1188  57    35.625J
+257   w2    1188  40    25.000J
+297   w3    1188  3     1.875J
+300   w5    1188  35    21.875J
+335   w3    1188  33    20.625J
+368   w1    1188  32    20.000J
+400   w4    1188  57    35.625J
+457   w2    1188  40    25.000J
+497   w1    1188  3     1.875J
+500   w3    1188  20    12.500J
+
+--- Summary ---
+Total energy: 325.000 J
+Idle percentage: 0.00%
+Total execution time: 520 s
