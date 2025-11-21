@@ -266,7 +266,7 @@ def print_timeline(timeline):
 
 if __name__ == "__main__":
     input_file = sys.argv[1]
-    mode = sys.argv[2]  # EDF or RM
+    mode = sys.argv[2].upper()  # EDF or RM
 
     num_tasks, simulation_time, power_table, tasks = parse_input_file(input_file)
 
