@@ -22,6 +22,8 @@ for inp in inputs:
 
             print("Running:", " ".join(args))
             result = subprocess.run(args, capture_output=True, text=True)
+
+            print(result.stdout)
             
             # Save output file
             out_name = f"out_{inp.split('.')[0]}_{mode}{'_' + flag if flag else ''}.txt"
@@ -30,5 +32,6 @@ for inp in inputs:
 
             # Save stderr if any to file
             if result.stderr:
+                print(f"Error ({out_name}): {result.stderr}")
                 with open(output_dir / out_name.replace(".txt", "_stderr.txt"), "w") as f:
                     f.write(result.stderr)
