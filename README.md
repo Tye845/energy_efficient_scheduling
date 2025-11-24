@@ -13,7 +13,7 @@ Each scheduler simulates task execution over a defined time period using the inp
 ## Files
 - `pa3.py` – Main program implementing all four scheduling algorithms.  
 - `input1.txt`, `input2.txt` – Sample input workloads.  
-- `run_all.py` – Convenience script that runs `pa3.py` with every required combination of inputs and modes, saving the output to separate files.  
+- `run_all.py` – Convenience script that runs `pa3.py` with every required combination of inputs and modes, printing and saving the output to separate files.  
 - `out_input*_*.txt` – Generated simulation results.  
 - `out_input*_*.stderr.txt` – Optional error logs (only created if a run outputs to stderr).
 
@@ -31,7 +31,7 @@ Run it using:
 python run_all.py
 ```
 
-It produces eight output files:
+This prints all output to the console, as well as produces eight output files:
 
 - `out_input1_RM.txt`  
 - `out_input1_RM_EE.txt`  
